@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090d24"><title>ZOMBIE SWING — GROOVE EDITION / DAY 1</title>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090d24"><title>ZOMBIE SWING — DAY 2 / IMPACT EDITION</title>
 <style>
 :root{--cyan:#5be8ff;--pink:#ff69bc;--gold:#fff3ad;--bg:#080c20;--ink:#f6f6ff;--muted:#a6b3d3}*{box-sizing:border-box}html,body{min-height:100%;margin:0}body{background:radial-gradient(ellipse at 50% -23%,#292058 0,#10122d 50%,#080b1b 89%);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;overflow-x:hidden}body:before{content:"";pointer-events:none;position:fixed;inset:0;opacity:.35;background:linear-gradient(135deg,transparent 42%,#0c1733 53%,transparent 54%);background-size:95px 95px}main{max-width:1240px;margin:auto;padding:18px 18px 26px;position:relative}.brand-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}.kicker{font-size:10px;letter-spacing:.31em;font-weight:900;color:#87a8da;margin:0 0 5px}.logo{font-size:clamp(26px,4vw,45px);font-weight:1000;font-style:italic;letter-spacing:-2px;line-height:1;text-shadow:3px 3px #181648}.logo b{color:var(--cyan)}.brand-side{text-align:right;color:#9eb4d8;font-size:12px;line-height:1.7}.brand-side strong{color:#ffb9dc}.hud{display:grid;grid-template-columns:1.2fr .8fr .8fr 1fr;gap:9px;margin-bottom:10px}.cell{background:linear-gradient(140deg,#171a3e,#10172e);border:1px solid #36375f;border-radius:12px;padding:9px 15px;min-width:0}.cell small{font-size:10px;color:#98a9cc;font-weight:900;letter-spacing:.18em}.value{font-size:clamp(22px,2.9vw,33px);font-variant-numeric:tabular-nums;font-weight:1000;line-height:1.2;margin-top:3px}.hearts{color:#ff78aa;letter-spacing:.12em;white-space:nowrap}.dead{color:#46506a}.stage{position:relative;width:100%;aspect-ratio:1200/620;border:2px solid #424478;border-radius:16px;overflow:hidden;background:#10142a;box-shadow:0 16px 55px #000b,0 0 25px #3b56aa15;touch-action:manipulation}canvas{display:block;width:100%;height:100%;touch-action:manipulation}.overlay{position:absolute;inset:0;background:linear-gradient(105deg,#060c23ef,#101133e8 53%,#090e24db);display:flex;align-items:center;justify-content:center;padding:15px;text-align:center;z-index:2}.hidden{display:none}.overlay-card{max-width:720px;width:100%}.over-kicker{font-size:12px;letter-spacing:.3em;color:var(--cyan);font-weight:1000}.overlay h1{font-size:clamp(35px,6.8vw,78px);font-style:italic;line-height:1;margin:7px 0 10px;font-weight:1000;letter-spacing:-.08em;text-shadow:4px 5px #37235d}.overlay h1 span{color:var(--pink)}.overlay p{color:#d0d9f5;font-size:clamp(12px,1.35vw,15px);line-height:1.7;margin:10px auto}.rules{display:flex;align-items:stretch;justify-content:center;gap:10px;margin:15px auto;max-width:560px}.rule{flex:1;border:1px solid #42446e;background:#131a3bba;border-radius:11px;padding:10px 7px;text-align:center}.rule strong{display:block;margin-bottom:6px;font-size:15px}.rule small{display:block;color:#b1bce0;font-size:11px}.rule .key{font-size:12px;font-weight:900;color:#e6f6ff}.select-row{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;color:#b8c8e5;margin:12px auto}select{background:#131b39;border:1px solid #4d608e;border-radius:7px;color:#fff;padding:7px;font:800 12px system-ui}.primary{border:0;border-radius:11px;background:linear-gradient(110deg,#6df2ff,#b7f9f7);color:#10183b;font-size:20px;font-weight:1000;padding:13px 40px;cursor:pointer;box-shadow:0 5px 0 #228d9f,0 11px 24px #0006;touch-action:manipulation}.primary:active{transform:translateY(4px);box-shadow:0 1px 0 #228d9f}.hint{font-size:11px!important;color:#899fca!important}.controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:11px}.hitbtn{min-height:71px;display:flex;justify-content:center;align-items:center;gap:10px;border:2px solid;border-radius:14px;color:#07112a;font-weight:1000;cursor:pointer;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform .07s,filter .07s}.hitbtn:active,.hitbtn.pressed{transform:scale(.985);filter:brightness(1.28)}.hitbtn.swing{background:linear-gradient(105deg,#b3f879,#e5ffb9);border-color:#dbffa7;box-shadow:inset 0 -5px #70a446,0 6px 20px #80ff5b25}.hitbtn.bunt{background:linear-gradient(105deg,#e1abff,#b17df3);border-color:#ebccff;box-shadow:inset 0 -5px #8e4abb,0 6px 20px #ad70ff22}.keycaps{border:2px solid #1324493a;border-bottom-width:4px;border-radius:7px;padding:7px 10px;font-size:20px}.hitbtn span{display:block;font-size:clamp(16px,2.3vw,22px)}.hitbtn small{display:block;font-size:11px;opacity:.65}.bar-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:12px}.tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.subbtn{background:#151b38;border:1px solid #41486f;border-radius:8px;color:#d9e4fa;font:800 12px system-ui;padding:9px 13px;cursor:pointer}.timing{display:flex;align-items:center;gap:9px;font-size:11px;color:#b9c5de}input[type=range]{accent-color:#6ee9ff;width:100px}.footer-tip{color:#7e90b4;font-size:11px;line-height:1.6;margin-top:12px}.primary:focus-visible,.hitbtn:focus-visible,.subbtn:focus-visible{outline:3px solid white;outline-offset:3px}@media(max-width:650px){main{padding:10px 8px 18px}.brand-side{display:none}.hud{gap:5px}.cell{padding:7px 6px;border-radius:8px}.cell small{font-size:9px;letter-spacing:0}.value{font-size:21px}.stage{border-radius:10px;aspect-ratio:1200/760}.overlay{padding:7px}.overlay h1{font-size:clamp(31px,9vw,54px)}.over-kicker{font-size:9px}.overlay p{font-size:11px;line-height:1.42;margin:7px auto}.rules{gap:5px;margin:8px auto}.rule{padding:5px 3px}.rule strong{font-size:12px;margin-bottom:2px}.rule small{font-size:10px}.rule .key{font-size:10px}.select-row{margin:7px auto}.primary{padding:9px 26px;font-size:16px}.hint{font-size:9px!important}.hitbtn{min-height:72px}.bar-bottom{justify-content:center}.footer-tip{font-size:10px}}@media(max-width:390px){.stage{aspect-ratio:1200/900}.overlay h1{font-size:32px}.overlay p{font-size:10px}.hint{display:none}.rule{min-width:0}}
 
@@ -76,8 +76,18 @@ button { -webkit-tap-highlight-color:transparent; }
   .primary { font-size:15px;padding:8px 20px; }
 }
 .primary,.hitbtn{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.overlay:not(.hidden) .primary{position:relative;z-index:20;touch-action:manipulation;pointer-events:auto}.overlay.hidden{display:none!important}@media (prefers-reduced-motion:reduce){.hitbtn{transition:none;}}
+
+/* iOS Safari: repeated rhythm taps must never be treated as text selection. */
+.controls, .controls *, .hitbtn, .hitbtn *, .stage, .stage *, .primary, .primary * {
+  -webkit-user-select:none!important; user-select:none!important;
+  -webkit-touch-callout:none!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+.controls,.hitbtn { touch-action:none!important; }
+.hitbtn { -webkit-appearance:none; appearance:none; -webkit-user-drag:none; }
+.stage canvas {touch-action:none!important;-webkit-user-select:none!important;user-select:none!important;}
 </style></head><body><main>
-<div class="brand-row"><div><div class="kicker">GROOVE EDITION · DAY 1</div><div class="logo">ZOMBIE <b>SWING</b><span style="font-size:.33em;vertical-align:top;margin-left:7px;color:#fca6de;letter-spacing:0">GROOVE EDITION</span></div></div><div class="brand-side"><strong>ONE LANE / CHASE SYSTEM</strong><br>緑＝ゆっくり歩く　紫＝高速で追い抜く</div></div>
+<div class="brand-row"><div><div class="kicker">GROOVE EDITION · DAY 2</div><div class="logo">ZOMBIE <b>SWING</b><span style="font-size:.33em;vertical-align:top;margin-left:7px;color:#fca6de;letter-spacing:0">DAY 2</span></div></div><div class="brand-side"><strong>ONE LANE / CHASE SYSTEM</strong><br>緑＝ゆっくり歩く　紫＝高速で追い抜く</div></div>
 <div class="hud"><div class="cell"><small>SCORE</small><div class="value" id="score">000000</div></div><div class="cell"><small>COMBO</small><div class="value" id="combo">0</div></div><div class="cell"><small>PERFECT</small><div class="value" id="perfect">0</div></div><div class="cell"><small>LIFE / 3 BITES</small><div class="value hearts" id="lives">♥♥♥</div></div></div>
 <div class="stage" id="stage"><div class="mobile-chip" aria-hidden="true">ONE LANE · TOUCH</div><canvas id="game" width="1200" height="620" aria-label="同じ列を右から流れる緑の歩くゾンビと紫の走るゾンビを、スイングとバントで打ち分けるリズムゲーム"></canvas>
 <div class="overlay" id="overlay"><div class="overlay-card"><div class="over-kicker" id="over-kicker">FEEL THE GROOVE · HIT ON THE BEAT</div><h1 id="over-title">FEEL THE <span>SWING.</span></h1><p id="over-desc">ゾンビは<strong>全員同じ一列</strong>で迫る！<strong>紫は緑より速い</strong>ので、後から現れて追い抜くことがある。<br>顔が左の<strong>光るリング</strong>に重なった瞬間に叩こう。<br><strong style="color:#b4fa74">緑＝スイング（F）</strong> ／ <strong style="color:#dba0ff">紫＝バント（J）</strong></p>
@@ -170,17 +180,35 @@ function musicStep(step,when){
  if(six===0&&beatInBar===0&&section>=1){hiss(when,.078,.04,3800);osc(880,when,.07,.025,'sine');}
 }
 function cue(t){osc(990,t,.10,.10,'sine');}
-function hitAudio(kind,quality,note){if(!audio)return;let t=audio.currentTime+.004;
- // Each successful hit plays a short in-key note, making F/J part of the groove.
- const chordIndex=note?note.bar%4:0;
- const harmony=chords[chordIndex];
- const pitch=kind==='high'?harmony[2]*2:harmony[0]*2;
- osc(pitch,t,quality==='PERFECT'?.19:.12,quality==='PERFECT'?.075:.048,'triangle',null,.002);
+function impactNoise(t,dur,vol,center,q=1.2){
+ if(!audio||!noiseBuffer)return;
+ const source=audio.createBufferSource(),filter=audio.createBiquadFilter(),gain=audio.createGain();
+ source.buffer=noiseBuffer;filter.type='bandpass';filter.frequency.setValueAtTime(center,t);filter.Q.value=q;
+ gain.gain.setValueAtTime(.0001,t);
+ gain.gain.exponentialRampToValueAtTime(Math.max(.0002,vol),t+.002);
+ gain.gain.exponentialRampToValueAtTime(.0001,t+dur);
+ source.connect(filter).connect(gain).connect(master);source.start(t);source.stop(t+dur+.015);
+}
+function hitAudio(kind,quality,note){
+ if(!audio)return;
+ const t=audio.currentTime+.003,perfect=quality==='PERFECT';
+ const harmony=chords[note?note.bar%4:0];
  if(kind==='high'){
-  // Immediate consonant attack, then a pitched, musical bat ring rather than a tin-can rattle.
-  hiss(t,.017,quality==='PERFECT'?.08:.06,2100);osc(270,t,.075,.105,'triangle',160,.002);
-  const vol=quality==='PERFECT'?.080:.057;[[1244,1],[1867,.38],[2488,.17]].forEach(([f,k],i)=>osc(f,t+.004,quality==='PERFECT'?.37:.24,vol*k,'sine',f*.995,.004));
- }else{osc(218,t,.085,.14,'triangle',92,.002);hiss(t,.036,.048,1000);osc(520,t,.075,.042,'triangle',400,.002);}
+   // Bat/ball impact: short woody crack + clean sustained steel resonance.
+   impactNoise(t,.052,perfect?.26:.18,1900,1.15);
+   impactNoise(t+.002,.018,perfect?.14:.1,4300,.78);
+   osc(230,t,.08,perfect?.19:.13,'triangle',115,.001);
+   osc(harmony[2]*2,t+.004,.22,perfect?.057:.039,'triangle',null,.002);
+   // Slightly inharmonic resonances: bright but not a thin empty-can ping.
+   osc(1048,t+.004,perfect?.48:.31,perfect?.105:.079,'sine',1025,.002);
+   osc(1665,t+.004,perfect?.33:.22,perfect?.063:.047,'sine',1645,.002);
+   osc(2571,t+.006,perfect?.19:.12,perfect?.027:.019,'sine',2525,.002);
+ }else{
+   // A bunt stays short and dry, visibly contrasting with the full swing.
+   impactNoise(t,.046,.13,1050,.8);
+   osc(196,t,.11,.14,'triangle',98,.002);
+   osc(harmony[0]*2,t+.004,.095,.028,'sine',null,.002);
+ }
 }
 function wrongAudio(){if(!audio)return;osc(153,audio.currentTime,.17,.08,'sawtooth',80);}
 function ensureTimer(){if(scheduler)clearInterval(scheduler);scheduler=setInterval(schedule,23);}
@@ -210,14 +238,14 @@ function start(){
 function end(win){if(mode!=='play')return;mode=win?'win':'lose';if(scheduler){clearInterval(scheduler);scheduler=null;}el.overlay.classList.remove('hidden');let total=perfect+great+good+miss;let acc=total?Math.round(100*accuracySum/total):0;let rank=acc>=95?'S':acc>=85?'A':acc>=70?'B':acc>=50?'C':'D';el.kicker.textContent=win?'STAGE CLEAR!':'GAME OVER';el.title.innerHTML=win?`RANK <span>${rank}</span>`:'GAME <span>OVER</span>';el.desc.innerHTML=`<b style="font-size:1.4em;color:#87f5ff">${score.toLocaleString()} POINTS</b><br>PERFECT ${perfect}　/　GREAT ${great}　/　GOOD ${good}　/　MISS ${miss}<br>最大COMBO ${maxCombo}　｜　達成率 ${acc}%<br>${win?'次はフルコンボを目指そう！':'色を見分けて、一つのリングを叩こう。'}`;el.start.textContent='↻ もう一度プレイ';if(audio&&!muted){let t=audio.currentTime;[0,.13,.26].forEach((d,i)=>osc(win?440*Math.pow(2,i/5):190-i*42,t+d,.18,.07,'triangle'));}}
 function updateHud(){el.score.textContent=String(score).padStart(6,'0');el.combo.textContent=combo;el.perfect.textContent=perfect;el.lives.innerHTML='<span>♥</span>'.repeat(Math.max(0,3-bites))+'<span class="dead">♥</span>'.repeat(bites);}
 function pulseUI(kind){let btn=kind==='high'?el.swing:el.bunt;btn.classList.add('pressed');setTimeout(()=>btn.classList.remove('pressed'),100);}
-function attack(kind){if(mode!=='play')return;pulseUI(kind);const t=now()+offset/1000;const old=action.at;if(t-old<.085&&action.kind===kind)return;action={kind,at:t};const targets=notes.filter(n=>!n.done&&Math.abs(n.when-t)<=.185).sort((a,b)=>Math.abs(a.when-t)-Math.abs(b.when-t));if(!targets.length){effects.push({type:'whiff',at:elapsed,kind});return;}let target=targets[0];if(target.kind!==kind){markMiss(target,'WRONG!');return;}let err=Math.abs(target.when-t),quality=err<=.065?'PERFECT':err<=.12?'GREAT':'GOOD';target.done=true;target.quality=quality;let value=quality==='PERFECT'?1000:quality==='GREAT'?650:300;let bonus=Math.min(40,combo)*10;score+=value+bonus;combo++;maxCombo=Math.max(combo,maxCombo);if(quality==='PERFECT'){perfect++;accuracySum+=1}else if(quality==='GREAT'){great++;accuracySum+=.7}else{good++;accuracySum+=.35;}updateHud();shakes=quality==='PERFECT'?6:3;verdict={label:quality,color:quality==='PERFECT'?'#ffffaf':quality==='GREAT'?'#87f1ff':'#ffb4df',at:elapsed,error:t-target.when};let y=LANES[kind];effects.push({type:'hit',x:HITX,y,at:elapsed,kind,quality});let seed=target.id+1;for(let i=0;i<18;i++){let a=i/18*TAU+hash(seed*12+i)*.3,s=100+hash(seed*67+i*5)*270;effects.push({type:'part',x:HITX,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,r:2+hash(seed*i+3)*5,life:.33+hash(i*seed+20)*.23,kind});}
+function attack(kind){if(mode!=='play')return;pulseUI(kind);const t=now()+offset/1000;const old=action.at;if(t-old<.085&&action.kind===kind)return;action={kind,at:t};const targets=notes.filter(n=>!n.done&&Math.abs(n.when-t)<=.185).sort((a,b)=>Math.abs(a.when-t)-Math.abs(b.when-t));if(!targets.length){effects.push({type:'whiff',at:elapsed,kind});return;}let target=targets[0];if(target.kind!==kind){markMiss(target,'WRONG!');return;}let err=Math.abs(target.when-t),quality=err<=.065?'PERFECT':err<=.12?'GREAT':'GOOD';target.done=true;target.quality=quality;let value=quality==='PERFECT'?1000:quality==='GREAT'?650:300;let bonus=Math.min(40,combo)*10;score+=value+bonus;combo++;maxCombo=Math.max(combo,maxCombo);if(quality==='PERFECT'){perfect++;accuracySum+=1}else if(quality==='GREAT'){great++;accuracySum+=.7}else{good++;accuracySum+=.35;}updateHud();shakes=quality==='PERFECT'?(kind==='high'?11:6):4;verdict={label:quality,color:quality==='PERFECT'?'#ffffaf':quality==='GREAT'?'#87f1ff':'#ffb4df',at:elapsed,error:t-target.when};let y=LANES[kind];effects.push({type:'hit',x:HITX,y,at:elapsed,kind,quality});if(kind==='high')effects.push({type:'slash',x:HITX,y,at:elapsed,kind,quality});else effects.push({type:'trip',x:HITX,y,at:elapsed,kind,quality});let seed=target.id+1;for(let i=0;i<(kind==='high'?25:12);i++){let a=i/(kind==='high'?25:12)*TAU+hash(seed*12+i)*.3,s=100+hash(seed*67+i*5)*(kind==='high'?430:210);effects.push({type:'part',x:HITX,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,r:2+hash(seed*i+3)*5,life:.33+hash(i*seed+20)*.23,kind});}
 if(kind==='high'){
  // Green walker: full swing launches the head upward in a pronounced pop fly.
  // The head keeps moving even after the note has been judged.
  heads.push({x:HITX+20,y:y-6,
-   vx:quality==='PERFECT'?410:quality==='GREAT'?355:300,
-   vy:quality==='PERFECT'?-765:quality==='GREAT'?-695:-625,
-   gravity:960,spin:quality==='PERFECT'?5.5:4.2,ang:0,life:1.6,kind,seed});
+   vx:quality==='PERFECT'?335:quality==='GREAT'?290:240,
+   vy:quality==='PERFECT'?-875:quality==='GREAT'?-790:-710,
+   gravity:1040,spin:quality==='PERFECT'?6.4:4.6,ang:0,life:1.75,kind,seed});
  bodyFalls.push({x:HITX,y:y+37,at:elapsed,kind});
 }else{
  // Purple runner: bunt trips the entire zombie; its head remains attached.
@@ -248,6 +276,20 @@ function back(t){let grad=g.createLinearGradient(0,0,0,620);grad.addColorStop(0,
 function drawZombieFace(x,y,r,kind,variant=0,headOnly=false){
  const purple=kind==='low';g.save();g.translate(x,y);g.rotate(headOnly?Math.sin(elapsed*12+variant)*.025:0);
  const skin=purple?['#aa75d7','#a078d5','#b18ada','#9c72c9'][variant%4]:['#9bd66e','#a9d88c','#8bc86f','#b1da80'][variant%4];
+ if(!purple){
+   // Green walker: unmistakable LEFT-facing silhouette toward the batter.
+   // Single visible eye, protruding nose/chin, rear ear and swept-back fringe.
+   poly([[r*.63,-r*.94],[r*.97,-r*.65],[r*.89,r*.29],[r*.58,r*.91],[-r*.30,r*1.06],[-r*.59,r*.62],[-r*.76,r*.46],[-r*.63,r*.21],[-r*.97,r*.11],[-r*1.14,-r*.13],[-r*.81,-r*.38],[-r*.59,-r*.76],[0,-r*1.07]],skin,'#315534',3);
+   ellipse(r*.67,r*.12,r*.21,r*.25,'#80b96b','#315534',2);
+   ellipse(r*.7,r*.12,r*.07,r*.11,'#577e4a');
+   poly([[-r*.77,-r*.57],[-r*.87,-r*1.02],[-r*.20,-r*1.20],[r*.53,-r*1.03],[r*.77,-r*.66],[r*.12,-r*.72],[-r*.33,-r*.51]],'#395a3d','#29412f',2);
+   ellipse(-r*.38,-r*.12,r*.22,r*.23,'#26384b');
+   ellipse(-r*.44,-r*.12,r*.08,r*.11,'#ffefae');
+   line(-r*.59,-r*.34,-r*.14,-r*.38,3,'#345537');
+   poly([[-r*.79,r*.36],[-r*.16,r*.39],[-r*.24,r*.54],[-r*.70,r*.55]],'#476147');
+   for(let i=0;i<3;i++)line(-r*.67+i*r*.17,r*.38,-r*.67+i*r*.17,r*.50,2,'#e9e9c2');
+   g.restore();return;
+ }
  ellipse(0,0,r,r*1.12,skin,purple?'#492963':'#315534',3);
  // Distinct head silhouette. Green has a heavy fringe; purple has aggressive tufts.
  if(purple){poly([[-r*.65,-r*.65],[-r*.94,-r*1.30],[-r*.26,-r*.92],[0,-r*1.4],[r*.28,-r*.92],[r*.92,-r*1.27],[r*.66,-r*.58]],'#623b82','#342044',2);}
@@ -282,7 +324,7 @@ function zombieNote(n,t){
  }else{
    // Slow flat-foot steps, bent back, limp arms; the face still reaches the exact beat.
    line(-12,94,-15-6*st,161,14,'#456b46');line(13,94,17+6*st,163,14,'#446c43');
-   line(-15-6*st,164,-3-6*st,166,13,'#293d37');line(17+6*st,166,32+6*st,168,13,'#293d37');
+   line(-15-6*st,164,-30-6*st,166,13,'#293d37');line(17+6*st,166,2+6*st,168,13,'#293d37');
    poly([[-24,40],[12,40],[28,98],[-24,101]],'#658c60','#324e3a',3);
    line(-19,48,-29-2*st,99+3*st,12,'#779b6e');line(16,50,31+2*st,97-3*st,12,'#789a72');
    ellipse(-29-2*st,100+3*st,9,10,'#91bc81');ellipse(31+2*st,97-3*st,9,10,'#91bc81');
@@ -296,9 +338,10 @@ function zombieNote(n,t){
 function bat(x,y,X,Y){g.save();g.translate(x,y);const len=Math.hypot(X-x,Y-y),a=Math.atan2(Y-y,X-x);g.rotate(a);poly([[0,-4],[27,-4],[36,-8],[len-7,-11],[len+4,-8],[len+4,8],[len-7,11],[36,8],[27,4],[0,4]],'#c2ecf5','#1a2043',3);rect(2,-5,32,10,'#25263f');line(33,-6,len-9,-6,3,'#ffffffd9');for(let i=0;i<4;i++)line(7+7*i,-5,10+7*i,5,1.8,'#ff80be');for(let i=0;i<3;i++)line(54+i*(Math.max(40,len-70))/3,-7,62+i*(Math.max(40,len-70))/3,7,3,i%2?'#54eaff':'#fa5caf');ellipse(len-13,0,5,6,'#f366bc');g.restore();}
 function hero(t){
  let dt=t-action.at,isActive=dt>=0&&dt<.36,phase=clamp(dt/.36,0,1),bunt=isActive&&action.kind==='low',swing=isActive&&!bunt;
- let step=swing?Math.sin(Math.min(1,phase*1.7)*Math.PI)*16:0,crouch=bunt?Math.sin(Math.min(1,phase*1.6)*Math.PI)*24:0,headBob=isActive?2.5:Math.sin(t*3)*2;
+ let step=swing?Math.sin(Math.min(1,phase*1.65)*Math.PI)*21:0,crouch=bunt?Math.sin(Math.min(1,phase*1.7)*Math.PI)*28:0,headBob=isActive?2.5:Math.sin(t*3)*2;
+ const swingLean=swing?Math.sin(Math.min(1,phase*1.25)*Math.PI)*.09:0;
  const x=142+step*.35,y=503;
- g.save();g.translate(x,y);g.scale(.9,.9);ellipse(0,8,74,10,'#03091da0');
+ g.save();g.translate(x,y);g.scale(.9,.9);g.rotate(swingLean);ellipse(0,8,74,10,'#03091da0');
  // legs and shoes
  line(-14,-64,-20-step*.25,-8,16,'#f0e7ef');line(14,-67,24+step*.3,-8,16,'#f0e7ef');
  ellipse(-24-step*.2,-5,24,11,'#f5f8ff','#21315a',3);ellipse(25+step*.25,-4,24,11,'#f5f8ff','#21315a',3);
@@ -310,7 +353,7 @@ function hero(t){
  poly([[-29,-150+crouch],[24,-152+crouch],[36,-114+crouch],[14,-104+crouch],[-35,-113+crouch]],'#4a79d6','#1d2d59',4);
  line(-2,-127+crouch,8,-127+crouch,3,'#223460');line(3,-127+crouch,3,-111+crouch,3,'#223460');
  let hy=-184+crouch*.72+headBob;
- let hairLag=(swing?Math.sin(phase*Math.PI)*20:0)+(bunt?Math.sin(phase*Math.PI)*8:0)+Math.sin(t*3)*3;
+ let hairLag=(swing?Math.sin(phase*Math.PI)*31:0)+(bunt?Math.sin(phase*Math.PI)*8:0)+Math.sin(t*3)*3;
  g.save();g.translate(0,hy);
  const hair=g.createLinearGradient(0,-36,0,92);hair.addColorStop(0,'#ffeaa7');hair.addColorStop(.63,'#f0d16d');hair.addColorStop(.66,'#7fdbff');hair.addColorStop(1,'#46bfd9');
  poly([[-24,-16],[-48,-32],[-63+hairLag*.15,-8],[-55+hairLag*.55,36],[-64+hairLag*.9,78],[-37+hairLag*.55,66],[-30,14]],hair,'#243765',3);
@@ -326,21 +369,34 @@ function hero(t){
  line(-18,2,-5,1,2.5,'#2f4069');line(5,1,18,0,2.5,'#2f4069');ellipse(-9,3,3,2.5,'#7487b7');ellipse(14,3,3,2.5,'#7487b7');line(-3,20,7,19,1.6,'#84657d');
  g.restore();
  const armY=-118+crouch;let hx=23,handY=armY-13,tx=-28,ty=armY-110;
- if(swing){let p=ease(clamp(phase/.16,0,1));hx=24+31*p;handY=armY-13-14*p;let theta=lerp(-2.0,-.86,p),length=164;tx=hx+Math.cos(theta)*length;ty=handY+Math.sin(theta)*length;if(phase>.38){let f=ease((phase-.38)/.62);hx=55-30*f;handY=armY-27+14*f;tx=lerp(hx+Math.cos(-.86)*164,-18,f);ty=lerp(handY+Math.sin(-.86)*164,armY-108,f);}}
+ if(swing){
+  // Full swing uses purpose-built poses: load, contact, release, follow-through, recover.
+  // At 19% the bat crosses the shared hit ring; limbs do not teleport between poses.
+  const poses=[
+   [0,23,-13,-28,-110], [.09,35,-26,53,-129],
+   [.19,53,-20,184,-52], [.28,57,-19,208,-30],
+   [.49,37,-30,87,-153], [.74,21,-14,-66,-151], [1,23,-13,-28,-110]
+  ];
+  for(let i=1;i<poses.length;i++)if(phase<=poses[i][0]){
+   const a=poses[i-1],b=poses[i],z=ease((phase-a[0])/(b[0]-a[0]));
+   hx=lerp(a[1],b[1],z);handY=armY+lerp(a[2],b[2],z);
+   tx=lerp(a[3],b[3],z);ty=armY+lerp(a[4],b[4],z);break;
+  }
+ }
  if(bunt){let p=ease(clamp(phase/.16,0,1));hx=lerp(20,47,p);handY=lerp(armY-12,armY+3,p);tx=lerp(-28,160,p);ty=lerp(armY-110,armY+28,p);if(phase>.62){let f=ease((phase-.62)/.38);hx=lerp(47,20,f);handY=lerp(armY+3,armY-12,f);tx=lerp(160,-28,f);ty=lerp(armY+28,armY-110,f);}}
  line(16,-114+crouch,hx,handY,13,'#4b77d4');line(16,-114+crouch,hx,handY,7,'#f7d5c2');
  line(-17,-113+crouch,hx-14,handY+2,13,'#476ec7');line(-17,-113+crouch,hx-14,handY+2,6,'#f5d2bf');
  bat(hx,handY,tx,ty);ellipse(hx,handY,8,7,'#c2ecff','#21345f',2);g.restore();}
 function drawTumble(z,t){
  const age=t-z.at;if(age<0||age>.82)return;
- const fall=ease(age/.26),slide=ease(clamp((age-.16)/.56,0,1));
+ const fall=ease(age/.22),slide=ease(clamp((age-.14)/.52,0,1)),bounce=age>.22?Math.sin((age-.22)*17)*Math.exp(-(age-.22)*8)*.13:0;
  // Reverse the former rightward tumble: the purple runner collapses toward the left.
  const x=z.x-slide*(z.quality==='PERFECT'?175:130),ground=TRACK_Y+174;
  const alpha=1-ease(clamp((age-.47)/.35,0,1));
  g.save();g.globalAlpha=alpha;
  ellipse(x+6,ground+6,49+slide*14,8,'#05071b88');
  // Rotate the entire sprinter forward toward the ground, pivoted around its hips.
- g.translate(x,ground-78+fall*59);g.rotate(-fall*1.47);
+ g.translate(x,ground-78+fall*59+Math.max(0,bounce)*24);g.rotate(-fall*1.53+bounce);
  line(-10,0,-22+slide*8,75,13,'#503775');line(11,0,25+slide*8,74,13,'#503775');
  line(-23+slide*8,75,-8+slide*8,77,13,'#26233e');line(25+slide*8,74,38+slide*8,77,13,'#26233e');
  poly([[-23,-54],[20,-55],[27,2],[-23,3]],'#6b4093','#39254c',3);
@@ -354,8 +410,29 @@ function drawTumble(z,t){
  ellipse(px,py,8+i*2,5+i,'#d6a2ff');}g.restore();}
 }
 function drawFx(dt){for(const z of tumbles)drawTumble(z,dt);for(const b of bodyFalls){let a=dt-b.at;if(a>0&&a<.28){g.save();g.globalAlpha=1-a/.28;line(b.x-5,b.y+10+a*80,b.x+12,b.y+29+a*130,15,'#6d7486');g.restore();}}
- for(const h of heads){g.save();g.globalAlpha=clamp(h.life*2,0,1);g.translate(h.x,h.y);g.rotate(h.ang);drawZombieFace(0,0,28,h.kind,h.seed%4,true);g.restore();}
- for(const e of effects){let age=dt-e.at;if(e.type==='part'){g.save();g.globalAlpha=clamp(e.life*2,0,1);ellipse(e.x,e.y,e.r,e.r,e.kind==='high'?'#c5ff99':'#dfa5ff');g.restore();}else if(age>=0&&age<.28&&e.x!==undefined){let k=age/.28;g.save();g.globalAlpha=(1-k)*.85;g.shadowColor=COL[e.kind];g.shadowBlur=16;g.strokeStyle=COL[e.kind];g.lineWidth=4;g.beginPath();g.arc(e.x,e.y,18+90*k,0,TAU);g.stroke();if(e.type==='hit'){for(let j=0;j<8;j++){let a=j*TAU/8;line(e.x+Math.cos(a)*18,e.y+Math.sin(a)*18,e.x+Math.cos(a)*(35+50*k),e.y+Math.sin(a)*(35+50*k),3,'#fff6c2');}}g.restore();}}
+ for(const h of heads){
+  g.save();g.globalAlpha=clamp(h.life*2,0,1);
+  // Air streaks follow the launched head; the projectile itself obeys real gravity.
+  for(let j=1;j<=4;j++){
+   const alpha=.25*(1-j/5);g.globalAlpha=clamp(h.life*2,0,1)*alpha;
+   line(h.x-j*24,h.y+j*15,h.x-j*24-16,h.y+j*15+5,3,'#c0ff90');
+  }
+  g.globalAlpha=clamp(h.life*2,0,1);g.translate(h.x,h.y);g.rotate(h.ang);
+  drawZombieFace(0,0,28,h.kind,h.seed%4,true);g.restore();
+ }
+ for(const e of effects){let age=dt-e.at;
+  if(e.type==='slash'&&age>=0&&age<.29){
+    const p=age/.29;
+    g.save();g.translate(e.x,e.y);g.globalAlpha=(1-p)*.94;
+    g.strokeStyle='#f3fff1';g.shadowColor='#baff77';g.shadowBlur=17;
+    g.lineWidth=12*(1-p)+2;g.beginPath();g.arc(-6,-6,57+p*55,-1.2,1.1);g.stroke();
+    g.lineWidth=4*(1-p)+1;g.strokeStyle='#a8ff74';g.beginPath();g.arc(-6,-6,77+p*58,-1.1,1.08);g.stroke();g.restore();
+  }
+  if(e.type==='trip'&&age>=0&&age<.25){
+    const p=age/.25;g.save();g.globalAlpha=1-p;
+    for(let i=0;i<5;i++)ellipse(e.x-10-i*15-p*40,e.y+149+(i%2)*6,8+15*p,4+7*p,'#cf9cff');g.restore();
+  }
+  if(e.type==='part'){g.save();g.globalAlpha=clamp(e.life*2,0,1);ellipse(e.x,e.y,e.r,e.r,e.kind==='high'?'#c5ff99':'#dfa5ff');g.restore();}else if(age>=0&&age<.28&&e.x!==undefined){let k=age/.28;g.save();g.globalAlpha=(1-k)*.85;g.shadowColor=COL[e.kind];g.shadowBlur=16;g.strokeStyle=COL[e.kind];g.lineWidth=4;g.beginPath();g.arc(e.x,e.y,18+90*k,0,TAU);g.stroke();if(e.type==='hit'){for(let j=0;j<8;j++){let a=j*TAU/8;line(e.x+Math.cos(a)*18,e.y+Math.sin(a)*18,e.x+Math.cos(a)*(35+50*k),e.y+Math.sin(a)*(35+50*k),3,'#fff6c2');}}g.restore();}}
  if(verdict&&dt-verdict.at<.56){let k=(dt-verdict.at)/.56;g.save();g.globalAlpha=Math.min(1,(1-k)*3);g.translate(mobileCrop?414:722,132-k*23);let z=1+Math.max(0,.15-k)*.7;g.scale(z,z);g.lineWidth=7;g.strokeStyle='#0b1430';g.font=`1000 ${verdict.label==='PERFECT'?61:52}px system-ui`;g.textAlign='center';g.strokeText(verdict.label,0,0);g.fillStyle=verdict.color;g.fillText(verdict.label,0,0);if(typeof verdict.error==='number'&&verdict.label!=='MISS'&&verdict.label!=='WRONG!'){g.font='800 18px system-ui';g.fillStyle='#e8ecff';g.fillText(Math.abs(verdict.error)<.018?'ON BEAT':(verdict.error<0?'EARLY':'LATE')+' '+Math.round(Math.abs(verdict.error)*1000)+'ms',0,30);}g.restore();}
  if(flash>0){rect(0,0,W,H,`rgba(255,60,103,${flash*.15})`);}}
 function stageOverlay(t){if(mode!=='play')return;if(t<lead*beat){let q=lead-t/beat;let countdown=Math.ceil(q);text(countdown>4?'READY':countdown>0?String(countdown):'GO!',mobileCrop?411:780,349,85,'#fce6fa',1000);text('LISTEN TO THE GROOVE',mobileCrop?411:780,395,17,'#95ecff');}else if(t<lead*beat+.6){text('GO!',mobileCrop?411:765,327,73,'#ffdf76');}
@@ -398,9 +475,18 @@ function resize(){
 resize();window.addEventListener('resize',resize);
 if(window.ResizeObserver){new ResizeObserver(()=>resize()).observe(document.getElementById('stage'));}
 requestAnimationFrame(frame);
-el.start.addEventListener('click',start);el.start.addEventListener('touchend',e=>{e.preventDefault();start()},{passive:false});$('retry').addEventListener('click',start);el.swing.addEventListener('pointerdown',e=>{e.preventDefault();attack('high')});el.bunt.addEventListener('pointerdown',e=>{e.preventDefault();attack('low')});canvas.addEventListener('pointerdown',e=>{if(mode!=='play')return;e.preventDefault();const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;attack(x<.5?'high':'low');});document.addEventListener('keydown',e=>{if(e.repeat)return;const k=e.code;if(['KeyF','KeyJ'].includes(k)){e.preventDefault();if(mode!=='play')return;attack(k==='KeyJ'?'low':'high');}else if(k==='Enter'&&mode!=='play'){start();}});
+el.start.addEventListener('click',start);el.start.addEventListener('touchend',e=>{e.preventDefault();start()},{passive:false});$('retry').addEventListener('click',start);// On iOS, prevent touch text selection at touchstart instead of waiting for click.
+function bindRhythmButton(button,kind){
+  button.addEventListener('touchstart',e=>{if(e.cancelable)e.preventDefault();attack(kind);},{passive:false});
+  button.addEventListener('touchmove',e=>{if(e.cancelable)e.preventDefault();},{passive:false});
+  button.addEventListener('touchend',e=>{if(e.cancelable)e.preventDefault();},{passive:false});
+  button.addEventListener('pointerdown',e=>{if(e.pointerType==='touch')return;e.preventDefault();attack(kind);});
+  button.addEventListener('contextmenu',e=>e.preventDefault());
+  button.addEventListener('selectstart',e=>e.preventDefault());
+}
+bindRhythmButton(el.swing,'high');bindRhythmButton(el.bunt,'low');canvas.addEventListener('pointerdown',e=>{if(mode!=='play')return;e.preventDefault();const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;attack(x<.5?'high':'low');});document.addEventListener('keydown',e=>{if(e.repeat)return;const k=e.code;if(['KeyF','KeyJ'].includes(k)){e.preventDefault();if(mode!=='play')return;attack(k==='KeyJ'?'low':'high');}else if(k==='Enter'&&mode!=='play'){start();}});
 el.audio.addEventListener('click',()=>{muted=!muted;el.audio.textContent=muted?'♪ ミュート':'♫ 音あり';if(master&&audio)master.gain.setTargetAtTime(muted?0:.68,audio.currentTime,.013);});el.guide.addEventListener('click',()=>{guide=!guide;el.guide.textContent=guide?'♩ 拍ガイド ON':'♩ 拍ガイド OFF'});el.offset.addEventListener('input',()=>{offset=Number(el.offset.value);el.offsetText.textContent=(offset>0?'+':'')+offset+'ms';});
 document.addEventListener('visibilitychange',()=>{if(!audio||mode!=='play')return;if(document.hidden)audio.suspend().catch(()=>{});else audio.resume().then(schedule).catch(()=>{});});setup();
-// Exposes read-only game state for local regression testing; gameplay does not depend on it.
+// Read-only diagnostics for deterministic timing and visual regression tests.
 window.__ZS_TEST__={state:()=>({mode,score,combo,perfect,great,good,miss,bites,bpm,elapsed,notes:notes.map(n=>({kind:n.kind,when:n.when,speed:n.speed,spawnAt:n.spawnAt,x:position(n,elapsed),visible:!n.done&&elapsed>=n.spawnAt&&position(n,elapsed)<=SPAWN_X,done:n.done,quality:n.quality}))}),hit:attack};
 })();</script></body></html>
